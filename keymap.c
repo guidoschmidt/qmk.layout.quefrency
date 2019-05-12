@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS, \
     KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_BSLS, \
     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_UP,   TG_DV, \
-    MO_FN,   KC_LCTL, KC_LALT, KC_LGUI, KC_SPC,           KC_ENT,  _______, KC_RALT, MO_FN,   KC_LEFT, KC_DOWN, KC_RGHT
+    MO_FN,   KC_LCTL, KC_LALT, KC_LGUI, KC_SPC,           KC_ENT,  _______, KC_RALT, KC_APP,  KC_LEFT, KC_DOWN, KC_RGHT
   ),
 
   [_FNQ] = LAYOUT(
@@ -40,11 +40,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_DVORAK] = LAYOUT(
-    KC_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    DE_PLUS, DE_LESS,KC_DEL,  KC_BSPC, \
+    KC_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    DE_PLUS, DE_CIRC, KC_DEL,  KC_BSPC, \
     KC_TAB,  DE_UE,   KC_COMM,  KC_DOT, KC_P,    DE_Y,    KC_F,    KC_G,    KC_C,    KC_T,    DE_Z,    DE_SS,   DE_QST, KC_BSLS, \
     KC_LCTL, KC_A,    KC_O,    KC_E,    KC_I,    KC_U,    KC_H,    KC_D,    KC_R,    KC_N,    KC_S,    KC_L,    DE_MINS, \
     KC_LSFT, DE_OE,   KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    DE_HASH, KC_UP,   TG_DV, \
-    MO_FD,   KC_LCTL, KC_LALT, KC_LGUI, KC_SPC,           KC_ENT,  _______, KC_RALT, MO_FN,   KC_LEFT, KC_DOWN, KC_RGHT
+    MO_FD,   KC_LCTL, KC_LALT, KC_LGUI, KC_SPC,           KC_ENT,  _______, KC_RALT, KC_APP,  KC_LEFT, KC_DOWN, KC_RGHT
   ),
 
   [_FND] = LAYOUT(
