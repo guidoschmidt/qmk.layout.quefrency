@@ -20,7 +20,7 @@ extern keymap_config_t keymap_config;
 
 #define TG_DV TG(_DVORAK)
 
-#define DE_MORE LSFT(DE_LESS)
+/* #define DE_MORE LSFT(DE_LESS) */
 
 enum custom_keycodes {
   QWERTY = SAFE_RANGE,
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  DE_UE,   KC_COMM, KC_DOT,  KC_P,    DE_Y,    KC_F,    KC_G,    KC_C,    KC_T,    DE_Z,    DE_SS,   DE_QST,  KC_BSLS, \
     KC_LCTL, KC_A,    KC_O,    KC_E,    KC_I,    KC_U,    KC_H,    KC_D,    KC_R,    KC_N,    KC_S,    KC_L,    DE_MINS, \
     KC_LSFT, DE_OE,   KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    DE_HASH, KC_UP,   TG_DV, \
-    MO_FD,   KC_LCTL, KC_LGUI, KC_LALT, KC_SPC,           KC_ENT,  _______, KC_RALT, KC_APP,  KC_LEFT, KC_DOWN, KC_RGHT
+    MO_FD,   KC_LCTL, KC_LALT, KC_LGUI, KC_SPC,           KC_ENT,  _______, KC_RALT, KC_APP,  KC_LEFT, KC_DOWN, KC_RGHT
   ),
 
   [_FND] = LAYOUT(
@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_FNPP] = LAYOUT(
     _______, _______, _______, _______, _______, _______, _______, DE_LESS, DE_MORE, _______, _______, _______, _______, _______, _______, \
-    _______, _______, _______, _______, _______, _______, DE_LBRC, DE_LCBR, DE_RCBR, DE_RBRC, _______, _______, _______, _______, \
+    _______, _______, _______, _______, _______, _______, DE_LBRC, DE_LCBR, DE_RCBR, DE_RBRC, _______, _______, _______, DE_GRV, \
     _______, DE_AE  , _______, _______, _______, _______, _______, DE_LPRN, DE_RPRN, _______, _______, _______, _______,\
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, \
     _______, MO_PP  , _______, _______, _______,          _______, _______, _______, _______, _______, _______, _______
